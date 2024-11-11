@@ -1,0 +1,101 @@
+@import url('https://fonts.googleapis.com/css2?family=Jersey+20&family=Lalezar&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins';
+    background-color: #0e0e2b;
+    color: whitesmoke;
+}
+
+header {
+    background-color: #ffd700;
+    color: #0e0e2b;
+    text-align: center;
+    padding: 20px;
+}
+
+.header-icon img {
+    width: 50px;
+    margin-bottom: 10px;
+}
+
+h1 {
+    font-size: 2rem;
+    margin: 10px 0;
+}
+
+.availability {
+    font-size: 1.2rem;
+    color: #ff4500;
+}
+
+.bus-cards {
+    padding: 20px;
+}
+
+.bus-card {
+    background-color: #5e5eaf;
+    padding: 20px;
+    margin-bottom: 15px;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: transform 0.2s;
+}
+
+.bus-card:hover {
+    transform: scale(1.01);
+}
+
+.bus-number {
+    font-size: 1.5rem;
+    color: #b3e5fc;
+}
+
+h3 {
+    margin: 10px 2px;
+}
+
+.route-info h3 {
+    color: #ffd700;
+}
+
+.route-info ul {
+    list-style: none;
+    margin: 10px 0;
+}
+
+.back-button {
+    background-color: #ffd700;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 8px;
+    cursor: pointer;
+    color: #0e0e2b;
+    font-size: 1rem;
+    margin-left: 20px;
+    margin-top: 20px;
+}
+.emb-button {
+    color: white;
+    margin-left: 20px;
+    background-color: #5e5eaf;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 8px;
+    cursor: pointer;
+    color: #0e0e2b;
+    font-size: 1rem;
+    margin-top: 20px;
+}
+
+button{
+    font-family: 'Poppins';
+}
+
+.screen.hidden {
+    display: none;
+}
