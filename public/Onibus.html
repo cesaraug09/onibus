@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ônibus Disponíveis</title>
+    <link rel="stylesheet" href="stylesOnibus.css">
+</head>
+<body>
+    <!-- Tela de Lista de Ônibus -->
+    <div id="bus-list" class="screen">
+        <header>
+            <div class="header-icon">
+                <img src="./img/bus.png" alt="Ícone de ônibus">
+            </div>
+            <h1>Ônibus Disponíveis</h1>
+            <p>05 Novembro, 2024 <span>📅</span></p>
+            <span class="availability">4 disponíveis</span>
+        </header>
+        <section class="bus-cards">
+            <div class="bus-card" onclick="showDetails('001')">
+                <p class="bus-number">001</p>
+                <h3>Cleudivan de Sousa</h3>
+                <p>Barro – CE ➔ Cajazeiras – PB</p>
+                <p><strong>Horário de saída:</strong> 05:10</p>
+            </div>
+            <div class="bus-card" onclick="showDetails('002')">
+                <p class="bus-number">002</p>
+                <h3>Savio Espalha Lixo</h3>
+                <p>Conceição – PB ➔ Cajazeiras – PB</p>
+                <p><strong>Horário de saída:</strong> 04:50</p>
+            </div>
+            <div class="bus-card" onclick="showDetails('003')">
+                <p class="bus-number">003</p>
+                <h3>Janderson Açougueiro</h3>
+                <p>Santa Cruz – PB ➔ Cajazeiras – PB</p>
+                <p><strong>Horário de saída:</strong> 05:30</p>
+            </div>
+            <div class="bus-card" onclick="showDetails('004')">
+                <p class="bus-number">004</p>
+                <h3>João Victor Verdureiro</h3>
+                <p>Sousa – PB ➔ Cajazeiras – PB</p>
+                <p><strong>Horário de saída:</strong> 06:00</p>
+            </div>
+        </section>
+    </div>
+
+
+    <div id="route-details" class="screen hidden">
+        <header>
+            <div class="header-icon">
+                <img src="./img/bus.png" alt="Ícone de ônibus">
+            </div>
+            <h1>Detalhes da Rota</h1>
+            <p>05 de Novembro, 2024 <span>📅</span></p>
+        </header>
+        <section class="route-info">
+            <p class="route-number">006 6:00 Sousa ➔ Cajazeiras</p>
+            <div>
+                <h3>Alunos:</h3>
+                <ul>
+                    <li>Sérgio Oliveira</li>
+                    <li>Riquelme Oliveira</li>
+                    <li>Alex Alcantara</li>
+                    <li>Diego Leita</li>
+                    <li>João Vitor</li>
+                    <li>Lauan</li>
+                    <li>Francisco</li>
+                </ul>
+            </div>
+            <div>
+                <h3>Faculdades da Rota:</h3>
+                <p>IFPB - 08:15H</p>
+                <p>UFCG - 09:00H</p>
+                <p>Santa Maria - 10:00H</p>
+                <p>ECIT - 11:00H</p>
+            </div>
+            <div>
+                <h3>Motorista:</h3>
+                <p>Cicero do Caminhão</p>
+            </div>
+        </section>
+        <button class="back-button" onclick="showList()">Voltar</button><button class="emb-button" onclick="showList()">Embarcar</button>
+    </div>
+
+    <script src="scriptOnibus.js"></script>
+</body>
+</html>
